@@ -1,0 +1,35 @@
+As an DevOps Engineer, you will be in a hands-on role, which consist of development, testing and deployment technologies for developing automated CI/ CD pipelines and supporting to AWS Cloud Infrastructure.
+
+ 
+
+•         Worked and maintained of Cloud core platform and tooling
+
+•         Proficient in leveraging in CI/CD/CT tools to automate build, testing and deployment.
+
+•         Experience in writing automation using Shell Script, PowerShell
+
+•         Working knowledge and experience in Devops Tools, Build and Release management
+
+•         Experienced in DevOps tools like JIRA, TFS , Confluence, Bamboo,Bitbucket,Jenkins, Git, Ant, Maven, Artifactory, Docker,Selenium, SonarQube, Ansible
+
+•         AWS Architecture knowledge and working experience on AWS services and application integration.
+
+•         Lambada, Cloudformation, ELK, S3, Route53, VPC, ELB, Autoscaling, Cloudwatch,AWS Config, Cloud Front, ECS,Elastic Beanstack, AWS database, RDS,
+
+•         WAF
+
+•         Experience with automation/configuration management tools
+
+•         Hands on experience on SCM (Source Code Management) using GIT/BitBucket
+
+•         Working experience in Agile methodology
+
+•         OS Knowledge of Linux (Ubuntu and Redhat) , Windows
+
+•         Working experience in monitoring tools
+
+•         Webservers & application servers & proxies
+
+•         nginx & uwsgi
+
+•         certificate management

@@ -1,0 +1,42 @@
+ 1  clear
+    2  ansible --version  ---->to check the version of ansible
+    3  ping 192.168.43.21  ---> to ping the client
+    4  clear
+    5  cd wrk
+    6  tree /etc/ansible  ---> to check the default files in ansible
+    7  clear
+    8  ssh 192.168.43.21
+    9  clear
+   10  ssh-keygen -t rsa --->To generate the key
+   11  ssh-copy-id -i 192.168.43.21 --->To copy key from master to clint
+   12  ssh 192.168.43.21 ---> To connect with clint
+   13  history
+
+ 14  cat > inventory.txt  --> to create and open the inventory.txt file
+   
+   1  cat inventory.txt ---> to open the inventory.txt
+   2  ansible node1 -m ping -i inventory.txt ---> to ping the node1 machine by using master machine
+   3  sudo apt-get install vim --->to install vim
+   4  systemctl ststus vim
+   5  vim inventory.txt  ---> to modify the file using vim
+   6  cat inventory.txt
+   7  vi inventory.txt  ---> to modify the file using vim
+   8  cat inventory.txt 
+   9  ansible -m ping -i inventory.txt all --> to ping all the machines
+   10  ansible -m shell -a "hostname" -i inventory.txt all -->to check the hostname of all machines
+   11  ansible -m shell -a "ifconfig | grep inet" -i inventory.txt all  ---> to check the ip address of all machines
+
+
+node1 ansible_host=192.168.43.21 --->to set the name for the ip192.168.43.21
+localhost ansible_connection=local ---> to connect to the localhost i.e master
+
+ 44  cat /etc/passwd | grep osboxes --->to check osboxes are avilable are not
+   45  cat /etc/passwd | grep demox --->to check demox user is avilable are not
+   47  ansible -m user -a "user=demox" -i inventory.txt all ---> to create demox user in all the machines(it will show permission error)
+   48  ansible -b -K -m user -a "user=demox" -i inventory.txt all --->to create demox user in all the machines
+   49  cat /etc/passwd  ---> to check the users list
+   51  tail /etc/passwd -n 3  ---> to check the last 3 users list
+   53  ansible -m shell -a "tail /etc/passwd -n 5" -i inventory.txt all  ---> to check the last 3 users list in all machines
+   54  ansible -b -K -m user -a "user=demoy" -i inventory.txt all  ---> to create the new user
+   56  ansible -b -K -m user -a "user=demoy comment=narendra" -i inventory.txt all--> to comment something on users
+   57  ansible -b -K -m user -a "user=demoy state=absent" -i inventory.txt all --->to shut down or remove the user

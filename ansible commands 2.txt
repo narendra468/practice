@@ -1,0 +1,11 @@
+  
+   1  mkdir temp --> to create the temp folder
+   2  cd temp  ---> to go into the temp folder
+   3  toudch 1.txt  ---> to create the file 1.txt
+   4  echo "hello -try1" > 1.txt  ---> to write the content in the 1.txt file
+   5  cat 1.txt --> to check the content in the 1.txt file
+   6  pwd  ---> present working directory
+   7  cd ..  ---> to exit from curren working directory
+   8 ansible-playbook copy.yaml -i inventory ---> to run the plybook named copy.yaml
+  
+ 
